@@ -10,4 +10,22 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic,weak) IBOutlet UITextField *userField;
+
+@property (nonatomic,weak) IBOutlet UITextField *pwdField;
+
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *forgotButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *lookButton;
+
+- (IBAction)backgroundTap:(id)sender;
+
+- (IBAction)textFieldDoneEditing:(id)sender;
+
+- (IBAction)pwdFieldDoneEditing:(id)sender;
+
+- (IBAction)loginButtonDone:(id)sender;
+
 @end
